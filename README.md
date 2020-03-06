@@ -8,7 +8,10 @@ La visualizzazione è prodotta con il software di Flourish Studio e il link pubb
 Si può embeddare in una pagina html con questo codice:
 
 ```
-<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/1514619"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/1514619">
+	<script src="https://public.flourish.studio/resources/embed.js">
+	</script>
+</div>
 ```
 
 Per la disponibilità dei dati si ringrazia OnData:
