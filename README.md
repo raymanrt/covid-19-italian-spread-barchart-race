@@ -20,3 +20,10 @@ Per la disponibilità dei dati si ringrazia OnData:
 
 Per la qualità dei dati si fa riferimento alla Protezione Civile:
 * http://www.protezionecivile.gov.it/attivita-rischi/rischio-sanitario/emergenze/coronavirus/
+
+Ringraziamenti:
+* Erika Marconato
+* Matteo Brunati
+* Nicola Vitucci
+* Cristian Consonni
+* Andrea Borruso
