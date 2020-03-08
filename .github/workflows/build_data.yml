@@ -4,10 +4,8 @@
 name: Python application
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  schedule:
+    - cron: '0 21 * * *'
 
 jobs:
   build:
@@ -33,4 +31,10 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Execute main script
       run: |
-        python prepare_data_dpc.py
+	rm -rf output.csv
+        python prepare_data_dpc.py >> output.csv
+    - name: Upload output results
+      uses: actions/upload-artifact@v1
+      with:
+        name: output
+        path: output.csv
