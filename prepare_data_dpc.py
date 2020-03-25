@@ -34,7 +34,7 @@ for line in content.splitlines():
 	provincia = denominazione_provincia.capitalize()
 	numero = totale_casi
 	regione = denominazione_regione.capitalize()
-	datetime = d.split(' ')[0]
+	datetime = d.split('T')[0]
 
 	# TODO: logica per skippare una linea in base a qualche valore non valido
 
