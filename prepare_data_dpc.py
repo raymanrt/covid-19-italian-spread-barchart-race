@@ -27,8 +27,9 @@ for line in content.splitlines():
 	if 'aggiorna' in line.lower():
 		continue
 
-	# data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_provincia,sigla_provincia,lat,long,totale_casi,note_it,note_en
-	d, stato, codice_regione, denominazione_regione, codice_provincia, denominazione_provincia, sigla_provincia,lat, lng, totale_casi, note_it, note_en = line.split(',')
+	# data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_provincia,sigla_provincia,lat,long,totale_casi,note
+
+	d, stato, codice_regione, denominazione_regione, codice_provincia, denominazione_provincia, sigla_provincia,lat, lng, totale_casi, note = line.split(',')
 
 
 	provincia = denominazione_provincia.capitalize()
