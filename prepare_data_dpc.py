@@ -29,8 +29,7 @@ for line in content.splitlines():
 
 	# data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_provincia,sigla_provincia,lat,long,totale_casi,note
 
-	d, stato, codice_regione, denominazione_regione, codice_provincia, denominazione_provincia, sigla_provincia,lat, lng, totale_casi, note = line.split(',')
-
+	d, stato, codice_regione, denominazione_regione, codice_provincia, denominazione_provincia, sigla_provincia, lat, lng, totale_casi, note = line.split(',', 10)
 
 	provincia = denominazione_provincia.capitalize()
 	numero = totale_casi
